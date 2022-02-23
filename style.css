@@ -1,0 +1,68 @@
+.app {
+    display: grid;
+    width: 300px;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5, 40px);
+    grid-template-areas:
+    "res res res res"
+    "reset reset reset div"
+    "7 8 9 mult"
+    "4 5 6 min"
+    "1 2 3 plus"
+    "0 0 equal equal";
+}
+
+h3 {
+    text-align: right;
+    width: 97%;    
+    height: 40px;
+    margin: auto;
+    padding: 2px;
+    font-size: 2rem;
+    grid-area: res;
+    border: 2px solid green;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 2px;
+    transition: 0.2s;
+    font-size: 18px; 
+}
+
+button:hover {
+    background-color:cadetblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#equal {
+    grid-area: equal;
+    background-color:coral;
+}
+
+#clear {
+    grid-area: reset;
+    background-color:darkkhaki;
+}
+
+#div {
+    grid-area: div;
+}
+
+#mult {
+    grid-area: mult;
+}
+
+#min {
+    grid-area : min;
+}
+
+#plus {
+    grid-area : plus;
+}
